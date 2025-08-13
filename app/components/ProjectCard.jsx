@@ -1,5 +1,5 @@
 import React from 'react'
-import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'  
+import { CodeBracketIcon } from '@heroicons/react/24/outline'  
 import Link from 'next/link'
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl}) => {
