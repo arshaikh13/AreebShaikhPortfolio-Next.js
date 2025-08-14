@@ -9,10 +9,29 @@ const HeroSection = () => {
         <section id="home" className="mt-10 scroll-mt-24">
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
-                    <h1 className="text-white mb-4 text-4xl sm:text-4xl lg:text-6xl font-extrabold">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-800 via-cyan-400 to-cyan-700">
+                    <h1 className="text-white mb-4 text-4xl sm:text-4xl lg:text-[2.5rem] font-extrabold">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-800 via-cyan-400 to-cyan-700 block sm:inline">
                             Hello, I'm{" "}
                         </span>
+                        <span className="hidden sm:inline">
+                            <TypeAnimation
+                                sequence={[
+                                    'Areeb',
+                                    1000,
+                                    'A Data Engineer',
+                                    1000,
+                                    'A BI Developer',
+                                    1000,
+                                    'Debugging Life',
+                                    1000
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                repeat={Infinity}
+                            />
+                        </span>
+                    </h1>
+                    <div className="sm:hidden text-white text-3xl font-extrabold mb-4">
                         <TypeAnimation
                             sequence={[
                                 'Areeb',
@@ -28,7 +47,7 @@ const HeroSection = () => {
                             speed={50}
                             repeat={Infinity}
                         />
-                    </h1>
+                    </div>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                         "The best way to get out of the rat race, 
                         is to never enter it in the first place" - <strong>Suhaib Kankodi</strong>
