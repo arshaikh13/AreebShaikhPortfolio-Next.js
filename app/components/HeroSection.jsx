@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
     return (
-        <section id="home" className="mt-10">
+        <section id="home" className="mt-10 scroll-mt-24">
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-4xl sm:text-4xl lg:text-6xl font-extrabold">
@@ -30,10 +30,8 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        "Yesterday is history,
-                        tomorrow is a mystery,
-                        and today is a gift..
-                        that's why they call it present" - <strong>Master Oogway</strong>
+                        "The best way to get out of the rat race, 
+                        is to never enter it in the first place" - <strong>Suhaib Kankodi</strong>
                     </p>
                     <div>
                         <Link href="#contact">

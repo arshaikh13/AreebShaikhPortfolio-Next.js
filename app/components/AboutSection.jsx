@@ -17,33 +17,37 @@ const TAB_DATA = [
             }}>
         </div>
         <div className="relative space-y-5">
-          <div className="flex items-start justify-between">
+          <div className="flex items-center justify-between gap-4 flex-wrap md:flex-nowrap">
             <div className="space-y-3">
               <h4 className="text-2xl font-bold bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent group-hover:from-blue-200 group-hover:via-white group-hover:to-purple-200 transition-all duration-300">
                 Data Engineering Intern
               </h4>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-500/10 border border-blue-400/20 rounded-full text-blue-300 text-sm font-medium backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-500/10 border border-blue-400/20 rounded-full text-blue-300 text-xs font-medium backdrop-blur-sm max-w-full min-w-0">
                 <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                Medxcel (Ascension Healthcare)
+                <span className="truncate">Medxcel (Ascension Healthcare)</span>
               </div>
             </div>
-            <div className="text-right">
-              <div className="text-xs font-medium text-cyan-400 mb-1">Duration</div>
-              <div className="text-sm font-semibold text-gray-300">4 months</div>
-            </div>
           </div>
-          <div className="flex items-center gap-4 text-sm text-gray-400">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-x-3 gap-y-1 text-sm text-gray-400">
+            <div className="flex items-center gap-2 whitespace-nowrap">
               <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
               </svg>
               May 2024 – Aug 2024
             </div>
-            <div className="flex items-center gap-2">
+            <span className="hidden sm:inline">•</span>
+            <div className="flex items-center gap-2 whitespace-nowrap">
               <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
               </svg>
               Indianapolis, IN
+            </div>
+            <span className="hidden sm:inline">•</span>
+            <div className="flex items-center gap-2 whitespace-nowrap">
+              <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 4a1 1 0 10-2 0v4a1 1 0 00.293.707l2.5 2.5a1 1 0 001.414-1.414L11 9.586V6z" clipRule="evenodd" />
+              </svg>
+              4 months
             </div>
           </div>
           <div className="prose prose-invert prose-sm">

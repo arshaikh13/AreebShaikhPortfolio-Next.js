@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { CodeBracketIcon } from '@heroicons/react/24/outline'  
 import Link from 'next/link'
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl}) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, techStack }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 640);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
  return (
    <div className="group h-full flex flex-col rounded-xl overflow-hidden bg-gradient-to-br from-slate-900/90 via-slate-800/50 to-slate-900/90 backdrop-blur-sm border border-slate-700/50 hover:border-cyan-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2">
      <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/5 via-blue-600/5 to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
@@ -20,17 +32,13 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl}) => {
            <div className="flex gap-4 mb-4">
              <Link 
                href={gitUrl}
-               className='h-14 w-14 bg-slate-800/80 backdrop-blur-sm border border-slate-600/50 rounded-full flex items-center justify-center hover:border-cyan-400 transition-all duration-300 group/code'>
+               className='h-14 w-14 bg-slate-800/80 backdrop-blur-sm border border-slate-600/70 rounded-full flex items-center justify-center hover:border-cyan-400 transition-all duration-300 group/code'>
                <CodeBracketIcon className='h-8 w-8 text-slate-300 group-hover/code:text-cyan-400 transition-colors duration-300' />
              </Link>
           
            </div>
            
-           <div className="flex gap-1 text-xs font-medium">
-             <span className='px-2 py-1/2 text-white rounded-full bg-slate-600 text-lg'>
-               View Code
-             </span>
-           </div>
+           <></>
          </div>
        </div>
      </div>
@@ -42,15 +50,31 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl}) => {
          </h5>
          
          <div className="flex gap-1">
-           {[1,2,3].map((dot) => (
-             <div key={dot} className="w-2 h-2 bg-slate-600 rounded-full group-hover:bg-cyan-400/60 transition-colors duration-300" style={{transitionDelay: `${dot * 100}ms`}}></div>
-           ))}
+           {isSmallScreen ? (
+             <Link
+               href={gitUrl}
+               className="inline-flex items-center justify-center whitespace-nowrap px-2 py-1 text-xs font-medium hover:text-white text-cyan-400 rounded-full border border-cyan-400"
+             >
+               View Code
+             </Link>
+           ) : (
+             [1,2,3].map((dot) => (
+               <div key={dot} className="w-2 h-2 bg-slate-600 rounded-full group-hover:bg-cyan-400/60 transition-colors duration-300" style={{transitionDelay: `${dot * 100}ms`}}></div>
+             ))
+           )}
          </div>
        </div>
        
        <p className="text-slate-300 leading-relaxed flex-grow mb-4 group-hover:text-slate-200 transition-colors duration-300">
          {description}
        </p>
+       <div className="flex flex-wrap gap-2">
+         {techStack && techStack.map((tech, index) => (
+           <span key={index} className="px-2 py-1 text-xs font-medium text-cyan-300 bg-slate-700 rounded-full border border-cyan-400/30">
+             {tech}
+           </span>
+         ))}
+       </div>
      </div>
    </div>
  )

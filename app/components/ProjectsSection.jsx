@@ -11,7 +11,8 @@ const projectsData = [
     description: "coming soon", 
     image:"/images/projects/stock-sim.png",
     tag: ["All", "ETL"],
-    gitUrl: "/"
+    gitUrl: "/",
+    techStack: ["None", "None", "None"]
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const projectsData = [
     description: "coming soon", 
     image:"/images/projects/chicago-transit.png",
     tag: ["All", "ETL"],
-    gitUrl: "/"
+    gitUrl: "/",
+    techStack: ["None", "None", "None"]
   },
   {
     id: 3,
@@ -27,7 +29,8 @@ const projectsData = [
     description: "A Python-based Amazon price tracker that monitors product pages, logs updates, and sends email alerts when prices meet your target threshold", 
     image:"/images/projects/price_tracker.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/arshaikh13/AmazonPriceTracker-Python"
+    gitUrl: "https://github.com/arshaikh13/AmazonPriceTracker-Python",
+    techStack: ["Python"]
   },
   {
     id: 4,
@@ -35,7 +38,8 @@ const projectsData = [
     description: "A custom tool developed to retrieve tweets in real-time based on specified keywords or usernames, ideal for trend analysis or user monitoring.",
     image:"/images/projects/twitter_scraper.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/arshaikh13/TwitterDataMine-Python"
+    gitUrl: "https://github.com/arshaikh13/TwitterDataMine-Python",
+    techStack: ["Python", "API Integration"]
   },
   {
     id: 5,
@@ -43,7 +47,8 @@ const projectsData = [
     description: "Showcasing my full-stack development skills with a sleek, modern portfolio built to impress!", 
     image:"/images/projects/portfolio_site.png",
     tag: ["All"],
-    gitUrl: "/"
+    gitUrl: "/",
+    techStack: ["Next.js", "Tailwind CSS"]
   },
   {
     id: 6,
@@ -51,7 +56,8 @@ const projectsData = [
     description: "Showcases a professionally designed MySQL database tailored for retail, efficiently managing orders, inventory, loyalty programs, and reviews in 3NF", 
     image:"/images/projects/relational_database.png",
     tag: ["All"],
-    gitUrl: "https://github.com/arshaikh13/LuxThread-SQL"
+    gitUrl: "https://github.com/arshaikh13/LuxThread-SQL",
+    techStack: ["mySQL", "Entity Relationship Diagram"]
   },
   {
     id: 7,
@@ -59,7 +65,8 @@ const projectsData = [
     description: "This project presents an interactive Connect Four game built in Python, enabling two players to compete, demonstrating strong game development capabilities.", 
     image:"/images/projects/connect_four.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/arshaikh13/ConnectFour-Python"
+    gitUrl: "https://github.com/arshaikh13/ConnectFour-Python",
+    techStack: ["Python"]
   },
   {
     id: 8,
@@ -67,7 +74,8 @@ const projectsData = [
     description: "A Python-based console tool allowing authenticated users to add, view, and perform case-insensitive searches of movie records.", 
     image:"/images/projects/film_fusion.png",
     tag: ["All", "Python"],
-    gitUrl: "https://github.com/arshaikh13/FilmFusionApp-Python"
+    gitUrl: "https://github.com/arshaikh13/FilmFusionApp-Python",
+    techStack: ["Python"]
   },
   {
     id: 9,
@@ -75,7 +83,8 @@ const projectsData = [
     description: "A serverless Google Cloud architecture with Node.js to automatically scan, sort, and count PDFs, identifying malicious and benign files", 
     image:"/images/projects/malware_scanner.png",
     tag: ["All"],
-    gitUrl: "https://github.com/arshaikh13/MalwareScanner-Node.js"
+    gitUrl: "https://github.com/arshaikh13/MalwareScanner-Node.js",
+    techStack: ["Google Cloud Storage", "Node.js"]
   },
 ]
 
@@ -134,6 +143,7 @@ const ProjectsSection = () => {
             description={project.description} 
             imgUrl={project.image}
             gitUrl={project.gitUrl}
+            techStack={project.techStack}
           />
         </motion.li>
       ))}

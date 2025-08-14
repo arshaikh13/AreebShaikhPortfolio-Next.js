@@ -69,6 +69,26 @@ const EmailSection = () => {
         )}
 
         <form ref={form} className="flex flex-col" onSubmit={handleSubmit}>
+          {/* Name Field */}
+          <div className="mb-6">
+            <label
+              htmlFor="user_name"
+              className="text-white block mb-2 text-sm font-medium"
+            >
+              Your Name
+            </label>
+            <input
+              name="user_name"
+              type="text"
+              id="user_name"
+              required
+              className="bg-[#18191E] border border-cyan-700 placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-300"
+              placeholder="John Doe"
+              disabled={isSubmitting}
+            />
+          </div>
+
+          {/* Email Field */}
           <div className="mb-6">
             <label
               htmlFor="user_email"
@@ -87,6 +107,7 @@ const EmailSection = () => {
             />
           </div>
           
+          {/* Subject Field */}
           <div className="mb-6">
             <label
               htmlFor="subject"
@@ -105,6 +126,7 @@ const EmailSection = () => {
             />
           </div>
           
+          {/* Message Field */}
           <div className="mb-6">
             <label
               htmlFor="message"
@@ -123,6 +145,7 @@ const EmailSection = () => {
             />
           </div>
           
+          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
