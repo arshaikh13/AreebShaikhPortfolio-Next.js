@@ -70,7 +70,7 @@ const EmailSection = () => {
 
         <form ref={form} className="flex flex-col" onSubmit={handleSubmit}>
           {/* Name Field */}
-          <div className="mb-6">
+          <div className="mb-3">
             <label
               htmlFor="user_name"
               className="text-white block mb-2 text-sm font-medium"
@@ -89,7 +89,7 @@ const EmailSection = () => {
           </div>
 
           {/* Email Field */}
-          <div className="mb-6">
+          <div className="mb-3">
             <label
               htmlFor="user_email"
               className="text-white block mb-2 text-sm font-medium"
@@ -108,7 +108,7 @@ const EmailSection = () => {
           </div>
           
           {/* Subject Field */}
-          <div className="mb-6">
+          <div className="mb-3">
             <label
               htmlFor="subject"
               className="text-white block text-sm mb-2 font-medium"
