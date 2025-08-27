@@ -49,8 +49,10 @@ const HeroSection = () => {
                         />
                     </div>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        "The best way to get out of the rat race, 
-                        is to never enter it in the first place" - <strong>Suhaib Kankodi</strong>
+                        "Yesterday is history,
+                        tomorrow is a mystery,
+                        and today is a gift...
+                        that's why they call it present" - <strong>Master Oogway</strong>
                     </p>
                     <div>
                         <Link href="#contact">
