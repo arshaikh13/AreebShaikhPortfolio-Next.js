@@ -7,21 +7,21 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Interactive Stock-Investment Simulator",
-    description: "coming soon", 
-    image:"/images/projects/stock-sim.png",
-    tag: ["All", "ETL"],
-    gitUrl: "/",
-    techStack: ["None", "None", "None"]
+    title: "Medicare Drug Spend Pipeline",
+    description: "An end-to-end Python pipeline ingesting 1,700+ CMS Medicare records, performing year-over-year drug spend analysis and threshold-based anomaly flagging", 
+    image:"/images/projects/medicare_drug_spend.png",
+    tag: ["All", "ETL", "Python"],
+    gitUrl: "https://github.com/arshaikh13/MedDataPipeline-Python",
+    techStack: ["Jupyter Notebook", "Pandas", "Matploblib"]
   },
   {
     id: 2,
-    title: "Live Chicago Transit-Delay Tracker",
-    description: "coming soon", 
-    image:"/images/projects/chicago-transit.png",
-    tag: ["All", "ETL"],
-    gitUrl: "/",
-    techStack: ["None", "None", "None"]
+    title: "Banking Analytics Engine",
+    description: "A production-style MySQL database simulating a retail bank's transaction environment, with a full analytics layer on top.", 
+    image:"/images/projects/banking_analytics.png",
+    tag: ["All"],
+    gitUrl: "https://github.com/arshaikh13/Banking_Analytics_System-SQL",
+    techStack: ["mySQL", "VS Code", "ER Modeling"]
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projectsData = [
     image:"/images/projects/price_tracker.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/arshaikh13/AmazonPriceTracker-Python",
-    techStack: ["Python"]
+    techStack: ["Python", "API Integration", "Data Scraping"]
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const projectsData = [
     image:"/images/projects/twitter_scraper.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/arshaikh13/TwitterDataMine-Python",
-    techStack: ["Python", "API Integration"]
+    techStack: ["Python", "API Integration", "Data Scraping"]
   },
   {
     id: 5,

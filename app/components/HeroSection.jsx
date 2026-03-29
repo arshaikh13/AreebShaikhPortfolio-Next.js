@@ -72,9 +72,9 @@ const HeroSection = () => {
                 <div className="col-span-5 place-self-center mt-15 mb-8 md:mt-4 md:mb-0 lg:mt-0">
                     <div className="rounded-full bg-[#181818] w-[250px] h-[250px] sm:mt-10 lg:w-[300px] lg:h-[300px] relative overflow-hidden">
                         <Image
-                            src='/images/myavatar.jpg'
+                            src='/images/myavatar.png'
                             alt="header image"
-                            className="object-cover"
+                            className="object-cover object-top object-left"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
