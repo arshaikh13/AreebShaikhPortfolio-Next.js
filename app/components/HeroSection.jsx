@@ -60,7 +60,7 @@ const HeroSection = () => {
                                 Hire Me
                             </button>
                         </Link>
-                        <Link href="https://drive.google.com/file/d/19DHnLvt6QpRdg9utaU_K1hYzjlJyq41b/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://drive.google.com/file/d/1UQYXWdmzxC6_qtR3Nz_hom0EnyJC-5QS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <button className="px-1 py-1 cursor-pointer font-semibold rounded-full w-full sm:w-fit bg-gradient-to-br from-sky-800 via-cyan-400 to-cyan-700 hover:bg-slate-800 border-white mt-3 text-white">
                                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white">
                                     View Resume
