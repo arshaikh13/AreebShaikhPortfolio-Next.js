@@ -1,8 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
-import GithubIcon from "/public/github-icon.svg";
-import LinkedinIcon from "/public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -41,12 +39,12 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I'll
           try my best to get back to you!
         </p> 
-        <div className="socials flex flex-row gap-2 mb-15">
+        <div className="socials flex flex-row gap-4 mb-15">
           <Link href="https://github.com/arshaikh13">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image src="/github-icon.svg" alt="Github Icon" width={32} height={32} />
           </Link>
           <Link href="https://www.linkedin.com/in/areeb-shaikh02/">
-            <Image src={LinkedinIcon} alt="LinkedIn Icon" />
+            <Image src="/linkedin-icon.svg" alt="LinkedIn Icon" width={32} height={32} />
           </Link>
         </div>
       </div>
